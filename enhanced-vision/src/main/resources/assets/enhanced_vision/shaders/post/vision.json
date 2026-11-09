@@ -1,0 +1,11 @@
+{
+  "targets": ["vision_swap"],
+  "passes": [
+    {
+      "name": "enhanced_vision:lens",
+      "intarget": "minecraft:main",
+      "outtarget": "vision_swap",
+      "use_linear_filter": true
+    }
+  ]
+}

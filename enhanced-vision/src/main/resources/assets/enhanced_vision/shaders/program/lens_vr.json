@@ -1,0 +1,19 @@
+{
+  "blend": {"func": "add", "srcrgb": "one", "dstrgb": "zero"},
+  "vertex": "blit",
+  "fragment": "enhanced_vision:lens_vr",
+  "attributes": ["Position"],
+  "samplers": [{"name": "DiffuseSampler"}],
+  "uniforms": [
+    {
+      "name": "ProjMat", "type": "matrix4x4", "count": 16,
+      "values": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+    },
+    {"name": "OutSize", "type": "float", "count": 2, "values": [1.0, 1.0]},
+    {"name": "Overscan", "type": "float", "count": 1, "values": [1.15]},
+    {"name": "ProjectionScaleX", "type": "float", "count": 1, "values": [1.0]},
+    {"name": "ProjectionScaleY", "type": "float", "count": 1, "values": [1.0]},
+    {"name": "ProjectionOffsetX", "type": "float", "count": 1, "values": [0.0]},
+    {"name": "ProjectionOffsetY", "type": "float", "count": 1, "values": [0.0]}
+  ]
+}

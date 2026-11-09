@@ -1,0 +1,59 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+group = 'dev.unikon'
+version = '1.0'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'Modrinth'
+                url = 'https://api.modrinth.com/maven'
+            }
+        }
+        filter { includeGroup('maven.modrinth') }
+    }
+}
+
+dependencies {
+    compileOnly('maven.modrinth:vivecraft:1.21.1-1.3.15-neoforge') {
+        transitive = false
+    }
+}
+
+neoForge {
+    version = '21.1.200'
+
+    runs {
+        client {
+            client()
+        }
+    }
+
+    mods {
+        enhanced_vision {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.named('jar', Jar) {
+    archiveFileName = "enhanced-vision-${project.version}-1.21.1-neoforge.jar"
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+    manifest.attributes(
+        'Implementation-Title': 'Enhanced Vision',
+        'Implementation-Version': project.version,
+        'FMLModType': 'MOD'
+    )
+    from('LICENSE')
+}
