@@ -67,7 +67,7 @@ Licensed under the [MIT License](LICENSE).
 
 Copyright (c) 2026 Unikon.
 
-Enhanced Vision is an independent Minecraft modification and is not officially affiliated with Mojang Studios, Microsoft, or Activision.
+Enhanced Vision is an independent Minecraft modification and is not officially affiliated with Mojang Studios, Microsoft.
 
 ---
 
@@ -89,7 +89,7 @@ Enhanced Vision is an independent Minecraft modification and is not officially a
 - **第一人称渲染** — 尽量保持中心目标和手持物品的视觉比例稳定。
 - **TACZ 兼容** — 支持枪械开镜及其视野变化。
 - **Vivecraft VR 支持** — 对 VR 左右眼分别应用视觉畸变。
-- **Iris 与 Sodium 兼容** — 包含针对渲染状态冲突的修复。
+- **Iris 与 Sodium 兼容** 
 
 ### 运行环境
 
@@ -130,4 +130,4 @@ gradle build
 
 Copyright (c) 2026 Unikon。
 
-增强视野是独立开发的 Minecraft 模组，与 Mojang Studios、Microsoft 或 Activision 没有官方关联。
+增强视野是独立开发的 Minecraft 模组，与 Mojang Studios、Microsoft 没有官方关联。
