@@ -1,0 +1,23 @@
+{
+  "key.categories.enhanced_vision": "增强视野",
+  "key.enhanced_vision.toggle": "开关增强视野",
+  "message.enhanced_vision.enabled": "增强视野：已开启",
+  "message.enhanced_vision.disabled": "增强视野：已关闭",
+  "message.enhanced_vision.shader_error": "增强视野着色器加载失败，请查看日志；按 F3+T 可重新加载。",
+  "enhanced_vision.config.enabled": "启用增强视野",
+  "enhanced_vision.config.enabled.tooltip": "开启桌面增强视野及平滑疾跑；进入 Vivecraft VR 后自动使用双眼畸变。默认快捷键为 F8。",
+  "enhanced_vision.config.strength": "外围视野扩张强度",
+  "enhanced_vision.config.strength.tooltip": "从中心向外围连续扩张视野。桌面和 VR 双眼共用此强度，默认 0.15；0 关闭畸变。",
+  "enhanced_vision.config.first_person_only": "仅第一人称生效",
+  "enhanced_vision.config.first_person_only.tooltip": "桌面仅调整第一人称世界，手和界面不参与畸变。VR 仅处理左右眼，世界内的手、枪和立体 HUD 一同处理。",
+  "enhanced_vision.config.follow_fov": "开镜时减弱外围扩张",
+  "enhanced_vision.config.follow_fov.tooltip": "桌面世界 FOV 低于 70° 时逐渐减弱外围扩张。VR 使用头显原生眼投影，不处理望远镜和独立相机。",
+  "enhanced_vision.config.sprint_fov": "平滑疾跑 FOV",
+  "enhanced_vision.config.sprint_fov.tooltip": "仅桌面：平滑调整疾跑时的世界视野，兼容 TACZ 的“禁用移速 FOV 效果”。VR 不增加疾跑 FOV。",
+  "enhanced_vision.config.sprint_strength": "疾跑视野增幅",
+  "enhanced_vision.config.sprint_strength.tooltip": "默认 0.1，即疾跑时基础世界 FOV 增加 10%。独立于原版“视野效果”滑块。",
+  "enhanced_vision.config.sprint_transition": "疾跑过渡时长（秒）",
+  "enhanced_vision.config.sprint_transition.tooltip": "开始和停止疾跑后，在此时间内完成约 95% 的视野变化。默认 0.4 秒。",
+  "fml.menu.mods.info.displayname.enhanced_vision": "增强视野",
+  "fml.menu.mods.info.description.enhanced_vision": "拓展第一人称外围视野，以平滑的光学畸变保留中央目标比例。\n提供可调节的疾跑 FOV 渐变、TACZ 兼容与 Vivecraft VR 双眼效果。\n仅客户端运行，按 F8 随时开关。"
+}

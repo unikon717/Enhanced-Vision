@@ -1,0 +1,11 @@
+{
+  "targets": ["vision_vr_swap"],
+  "passes": [
+    {
+      "name": "enhanced_vision:lens_vr",
+      "intarget": "minecraft:main",
+      "outtarget": "vision_vr_swap",
+      "use_linear_filter": true
+    }
+  ]
+}
